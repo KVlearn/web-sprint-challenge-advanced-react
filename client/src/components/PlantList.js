@@ -16,8 +16,12 @@ export default class PlantList extends Component {
     axios.get('http://localhost:3333/plants')
          .then (res=> {
            console.log('res=',res.data)
+           //Stretch#1 to add filter input to plant list page to remove plant with name "Staghorn Fern"//
+           const filteredData = res.data.plantsData.filter((item)=> item.name !== "Staghorn Fern")
+           console.log('filteredData=',filteredData);
+           //Set state with filtered Input Data
            this.setState({
-             plants:res.data.plantsData,
+             plants:filteredData,
            })
          })
          .catch(err=> console.log('error=',err));
