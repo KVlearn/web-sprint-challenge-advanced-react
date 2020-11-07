@@ -251,3 +251,40 @@ pre {
   color: #0e101c;
   border-bottom: 2px solid !important;
 }
+
+
+.dark-mode__toggle {
+  margin-left: auto 10px;
+  height:25px;
+  width:50px;
+  background: #ABD6DFFF;
+  border: 1px solid black;
+  border-radius: 50px;
+  position: relative;
+  color:black;
+}
+
+.toggle{
+  height:22px;
+  background:#7DB46CFF;
+  border-radius: 50px;
+  left:0;
+  position: absolute;
+  transition: 0.5s;
+  width:20px;
+}
+
+.toggled{
+  left:26px;
+}
+
+
+.dark-mode{
+  color: darkblue;
+  background-color: rgb(189, 210, 250);
+}
+  
+/* .lite-mode{
+  color: darkblue;
+  background-color: rgb(227, 234, 247);
+} */
